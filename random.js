@@ -5,7 +5,12 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+   makeCircle(100,50,25,"white",1.0)
+   makeRect(75,50,50,2,"red",1.0)
+   makeCircle(100,51,6,"red",1.0)
+makeCircle(100,51,5,"black",1.0)
+makeCircle(100,51,4,"white",1.0)
+makeImage("http://vignette1.wikia.nocookie.net/adventuretimewithfinnandjake/images/c/c2/Pokemon-logo.jpg/revision/latest?cb=20130307192515",95,0,25,25,1)
 }
 
 
@@ -13,7 +18,14 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeRect(50,50,49,50,"green",1.0)
+    makeRect(55,55,13,13,"black",1.0)
+    makeRect(80,55,13,13,"black",1.0)
+    makeRect(67,68,14,18,"black",1.0)
+             makeRect(61,75,7,20,"black",1.0)
+             makeRect(79,75,7,20,"black",1.0)
+             makeImage("https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Minecraft_logo.svg/1280px-Minecraft_logo.svg.png",0,30,35,35,1)
+            makeText("Minecraft is dead play roblox",0, 1, 70, 4, "monospace", "yellow", 0.4)
 }
 
 
@@ -21,33 +33,28 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeCircle(150,50,25,"red",1.0)
+makeCircle(150,50,13,"black",1.0)
+makeCircle(150,50,8,"red",1.0)
+makeRect(138,26,4,20,"black",1.0)
+makeImage("http://3.bp.blogspot.com/-rpu9v5Blong/VdYEm3bTYqI/AAAAAAAAANw/IuzTEKhYqcc/s1600/Beats-By-Dr-Dre-Logo.png",140,0,30,30,1)
 }
 
 
 
 
-
-// FILL IN THIS FUNCTION!
-// This function is called whenever you press the "Go!" button.
 function createRandomScene() {
-    // Generate a random number between 0 and 1, and store it in a variable.
-    
-    // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
-    // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
-    // Else, call the function to create your third scene.
-    
-    
-    
+    var create = Math.random()
+    if (create < 0.33){
+        createFirstScene()
+    }else{
+        if(create < 0.67){
+            createSecondScene()
+        }else{
+            createThirdScene()
+        }   
+    }
 }
-
-
 
 // DO NOT EDIT ANYTHING BELOW THIS LINE!
 // These are the functions you should call to
