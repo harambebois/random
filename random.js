@@ -25,7 +25,8 @@ function createSecondScene() {
              makeRect(61,75,7,20,"black",1.0)
              makeRect(79,75,7,20,"black",1.0)
              makeImage("https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Minecraft_logo.svg/1280px-Minecraft_logo.svg.png",0,30,35,35,1)
-            makeText("Minecraft is dead play roblox",0, 1, 70, 4, "monospace", "yellow", 0.4)
+            makeText("Play roblox instead", 2, 40, 10, "sans-serif", "yellow", 1.0)
+
 }
 
 
@@ -37,7 +38,7 @@ function createThirdScene() {
 makeCircle(150,50,13,"black",1.0)
 makeCircle(150,50,8,"red",1.0)
 makeRect(138,26,4,20,"black",1.0)
-makeImage("http://3.bp.blogspot.com/-rpu9v5Blong/VdYEm3bTYqI/AAAAAAAAANw/IuzTEKhYqcc/s1600/Beats-By-Dr-Dre-Logo.png",140,0,30,30,1)
+
 }
 
 
